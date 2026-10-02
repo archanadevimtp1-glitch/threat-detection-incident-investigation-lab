@@ -1,0 +1,148 @@
+
+THREAT DETECTION AND INCIDENT INVESTIGATION REPORT
+
+Project:
+Threat Detection & Incident Investigation Lab
+
+Environment:
+Kali Linux and Metasploitable 2
+
+Investigation Type:
+Network Security Investigation
+
+Tools Used:
+Nmap
+Wireshark
+
+Source IP:
+192.168.56.103
+
+Target IP:
+192.168.56.102
+
+EXECUTIVE SUMMARY
+
+This project demonstrates a controlled network security
+investigation performed in an isolated cybersecurity lab.
+
+Kali Linux was used as the security analysis machine and
+Metasploitable 2 was used as the intentionally vulnerable
+target.
+
+Nmap was used for network reconnaissance and service
+enumeration, while Wireshark was used to capture and analyze
+network traffic.
+
+The investigation identified TCP SYN-based reconnaissance,
+TCP communication, and HTTP traffic between the lab systems.
+
+All activities were performed within an isolated Host-Only
+VirtualBox network.
+
+
+OBJECTIVE
+
+1. To perform network reconnaissance against a controlled
+   vulnerable machine.
+
+2. To identify exposed services and network communication.
+
+3. To analyze reconnaissance traffic using Wireshark.
+
+4. To identify network-based indicators from captured traffic.
+
+5. To document the investigation using a SOC-style workflow.
+
+
+LAB ARCHITECTURE
+
+Security Analysis Machine:
+Kali Linux
+IP: 192.168.56.103
+
+Target Machine:
+Metasploitable 2
+IP: 192.168.56.102
+
+Network:
+VirtualBox Host-Only Network
+
+
+METHODOLOGY
+
+Phase 1:
+Network connectivity was verified between Kali Linux and
+Metasploitable 2.
+
+Phase 2:
+Nmap service/version detection was performed against the
+target.
+
+Phase 3:
+Wireshark was used to capture traffic generated during the
+investigation.
+
+Phase 4:
+TCP SYN packets and HTTP communication were analyzed.
+
+Phase 5:
+Source IP, destination IP, protocols, and observed activity
+were documented as investigation evidence.
+
+Phase 6:
+The findings were organized into an incident timeline and
+final investigation report.
+
+
+TOOLS USED
+
+Nmap
+Purpose:
+Network discovery, port scanning, and service/version
+enumeration.
+
+Wireshark
+Purpose:
+Packet capture and network traffic analysis.
+
+Kali Linux
+Purpose:
+Security testing and network investigation environment.
+
+Metasploitable 2
+Purpose:
+Intentionally vulnerable target machine for controlled
+cybersecurity practice.
+
+
+INVESTIGATION FINDINGS
+
+The investigation identified network reconnaissance activity
+from the Kali Linux machine toward the Metasploitable 2
+machine.
+
+TCP SYN packets associated with reconnaissance were observed
+in Wireshark.
+
+HTTP communication involving TCP port 80 was also observed.
+
+The captured traffic provided packet-level evidence of
+communication between the source and target systems.
+
+
+CONCLUSION
+
+This project demonstrated a basic SOC-style network security
+investigation workflow.
+
+Nmap was used to identify exposed services, while Wireshark
+provided packet-level visibility into the resulting network
+traffic.
+
+The project improved practical understanding of network
+reconnaissance, TCP communication, HTTP traffic analysis,
+IOC identification, evidence collection, and incident
+documentation.
+
+The investigation was performed entirely within an isolated
+cybersecurity laboratory environment.
